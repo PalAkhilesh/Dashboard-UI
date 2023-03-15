@@ -43,6 +43,9 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ImageComponent } from './homepage/image/image.component';
+import { NavbarComponent } from './homepage/navbar/navbar.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -55,6 +58,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     PatientComponent,
     AppointmentComponent,
     AboutComponent,
+    ImageComponent,
+    NavbarComponent,
   
   ],
   imports: [
@@ -87,7 +92,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatChipsModule,
     MatAutocompleteModule,
     MatListModule,
-    MatSelectModule 
+    MatSelectModule,
+    LayoutModule 
     
      
   ],
