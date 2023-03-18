@@ -5,11 +5,14 @@ import { PatientComponent } from './admin/home/patient/patient.component';
 import { NurseComponent } from './admin/home/nurse/nurse.component';
 import { HomeComponent } from './admin/home/home.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { NavbarComponent } from './homepage/navbar/navbar.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+      // path: '',
+      // component: NavbarComponent,
     path: '',
     component: DashboardComponent,
     

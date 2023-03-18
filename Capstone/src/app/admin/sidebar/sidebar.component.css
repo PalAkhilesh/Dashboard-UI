@@ -7,6 +7,7 @@ img{
     /* box-sizing: border-box; */
     text-decoration: none;
     color: aliceblue;
+    /* color:#865DFF */
   }
 
  * :hover{ color: aqua;}
@@ -23,6 +24,7 @@ img{
   }
   .name{
     color: aliceblue;
+    /* color:#865DFF */
   }
   .mail{
     margin-top: -16px;

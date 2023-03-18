@@ -6,6 +6,7 @@ mat-sidenav{
 mat-sidenav-content{
     height: 100vh;
     background-color:#f0ffff;
+    /* background-color: #865DFF; */
     .main{
         margin-left: 30px;
     }

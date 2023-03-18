@@ -1,5 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
+  <mat-sidenav #drawer class="sidenav" 
+      [ngClass]="{hidden: !(isHandset$ |async)}" 
+      fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
@@ -20,8 +22,21 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>g2-capstone</span>
+      <span>PMS</span>
+
+      <a href="#"> Home</a>
+      <a href="#"> About</a>
+      <a href="#"> Service</a>
+      <a href="#"> Service</a>
+
+      <span class="spacer"></span>
+      <button mat-raised-button color="warn">Book Appointment</button>
     </mat-toolbar>
     <!-- Add Content Here -->
+
+    <ng-content> 
+
+    </ng-content>
+
   </mat-sidenav-content>
 </mat-sidenav-container>

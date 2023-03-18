@@ -46,6 +46,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { ImageComponent } from './homepage/image/image.component';
 import { NavbarComponent } from './homepage/navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatRadioModule } from '@angular/material/radio';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AppointmentFormComponent } from './homepage/appointment-form/appointment-form.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +63,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     AboutComponent,
     ImageComponent,
     NavbarComponent,
+    AppointmentFormComponent,
   
   ],
   imports: [
@@ -93,7 +97,9 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatAutocompleteModule,
     MatListModule,
     MatSelectModule,
-    LayoutModule 
+    LayoutModule,
+    MatRadioModule,
+    ReactiveFormsModule 
     
      
   ],

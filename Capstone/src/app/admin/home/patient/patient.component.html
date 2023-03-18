@@ -10,7 +10,7 @@
         <input type="text" matInput placeholder="Search">
         <mat-icon matSuffix>search</mat-icon>
       </mat-form-field>
-      <div class="button-group">
+      <!-- <div class="button-group">
         <button mat-mini-fab color="primary">
           <mat-icon class="col-white">add</mat-icon>
         </button>
@@ -22,7 +22,7 @@
             <mat-icon class="col-white">delete</mat-icon>
           </button>
         </div>
-      </div>
+      </div> -->
     </mat-card-content>
   </mat-card>
 
@@ -102,10 +102,8 @@
       <mat-header-cell *matHeaderCellDef class="table-header">Actions</mat-header-cell>
       <mat-cell *matCellDef="let element">
         <button mat-icon-button color="primary" (click)="onEdit()">
-          <mat-icon>edit</mat-icon>
-        </button>
-        <button mat-icon-button color="warn" aria-label="Delete" >
-          <mat-icon>delete</mat-icon>
+          <!-- <mat-icon>edit</mat-icon> -->
+          <span class="material-icons">remove_red_eye</span>
         </button>
       </mat-cell>
     </ng-container>
